@@ -1,7 +1,7 @@
 # html-cleaning
 Basic Python script to extract plain text and clean up white space from a repo of HTML files.
 
-To use, edit line 6 to reflect the path to and name of the repo containing the html files; and line 15 to reflect the actual repo name and desired new reponame.
+To use, edit line 6 to reflect the path to and name of the repo containing the html files; and line 15 to reflect the actual repo name and desired new reponame. If necessary, edit line 19 to reflect desired changes or comment out to reflect desired lack of change, in the final file extension.
 
 Improvements I'll make to this file if I ever think it'll be worthwhile:
   1.) improve the progress bar. Basic tqdm on the outermost loop is a decent-but-not-great solution. It's main benefit was that I could get it working in ~10 seconds.
