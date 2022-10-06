@@ -3,15 +3,16 @@ from bs4 import BeautifulSoup
 from tqdm import tqdm
 import os
 
-directory_name = "D:\\stability-files\\archives"
+directory_name = "path\\to\\repo\\reponame"
 
 
 #loop through all files in directory = directory_name
 for path, subdirs, files in tqdm(os.walk(directory_name)):
     for name in files:
+        # select only html files if repo contains a mix of file types
         if name.__contains__(".html"):
             #create newpath which will be used as destination path for edited files
-            newpath = path.replace("archives", "edited-archives")
+            newpath = path.replace("reponame", "new-reponame")
 
             # create newname which will be used to store edited files, =newpath + name
             newname = os.path.join(newpath, name)
