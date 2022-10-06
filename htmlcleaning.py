@@ -16,6 +16,7 @@ for path, subdirs, files in tqdm(os.walk(directory_name)):
 
             # create newname which will be used to store edited files, =newpath + name
             newname = os.path.join(newpath, name)
+            newname = newname.replace(".html", ".txt")
 
             #preprocess filepaths to cooperate with BeautifulSoup's file reader
             urlpath = "file:///" + os.path.join(path, name)
