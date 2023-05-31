@@ -27,9 +27,9 @@ for path, subdirs, files in tqdm(os.walk(directory_name)):
             html = urlopen(url).read()
             soup = BeautifulSoup(html, features="html.parser")
 
-            ######################################################################################################
-            # Edit everything below to correct formatting. Currently outputs plain text with white space removed #
-            ######################################################################################################
+            #######################################################################################################################################
+            # Edit everything below to correct formatting. Currently outputs plain text with white space and repeated tokens from website removed #
+            #######################################################################################################################################
             soup = BeautifulSoup("")
 
             if path.__contains__("coq-club-raw.tar"):
